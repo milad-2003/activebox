@@ -1,1 +1,8 @@
 @import "/css/normalize.css";
+
+:root {
+  --color-primary: #e84545;
+  --color-header: #2d3033;
+  --color-text: #6c7279;
+  --color-light-text: #ffffff;
+}
