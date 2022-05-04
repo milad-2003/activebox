@@ -91,7 +91,7 @@ p {
 }
 
 .link--share {
-  border: 1px solid var(--color-light-text);
+  border: 2px solid var(--color-light-text);
   color: var(--color-light-text);
 }
 
