@@ -40,7 +40,7 @@ h1 {
 p,
 h2,
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 p {
@@ -56,6 +56,64 @@ p {
   p,
   h2,
   h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/*links*/
+
+.link {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link--primary {
+  background-color: var(--color-primary);
+  color: var(--color-light-text);
+}
+
+.link--rectangle {
+  padding: 1.5rem 4rem;
+}
+
+.link:hover {
+  background-color: #e72929;
+  transition: background-color, 500ms;
+}
+
+.link--testimonial {
+  border: 1px solid #c6cacc;
+  color: #c6cacc;
+}
+
+.link--share {
+  border: 1px solid var(--color-light-text);
+  color: var(--color-light-text);
+}
+
+.link--square {
+  height: 4rem;
+  padding: 1rem;
+  width: 4rem;
+}
+
+.link--testimonial:hover,
+.link--share:hover {
+  border-color: #e72929;
+  color: var(--color-light-text);
+  transition: color, border-color, 500ms;
+}
+
+.link__icons {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .link__icons {
     font-size: 1.6rem;
   }
 }
