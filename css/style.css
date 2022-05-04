@@ -103,9 +103,10 @@ p {
 
 .link--testimonial:hover,
 .link--share:hover {
-  border-color: #e72929;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   color: var(--color-light-text);
-  transition: color, border-color, 500ms;
+  transition: all, 500ms;
 }
 
 .link__icons {
