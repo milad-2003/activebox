@@ -60,7 +60,7 @@ p {
   }
 }
 
-/*links*/
+/*Links*/
 
 .link {
   border-radius: 3px;
@@ -117,4 +117,11 @@ p {
   .link__icons {
     font-size: 1.6rem;
   }
+}
+
+/*Features*/
+
+.feature__icon {
+  width: 8rem;
+  height: 8rem;
 }
