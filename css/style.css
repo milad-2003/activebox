@@ -125,3 +125,70 @@ p {
   width: 8rem;
   height: 8rem;
 }
+
+/*Works*/
+
+.work {
+  position: relative;
+}
+
+.work__image-container {
+  background-color: var(--color-primary);
+  display: inline-block;
+  transition: transform 400ms;
+}
+
+.hovered--work .work__image-container {
+  transform: scale(1.15);
+}
+
+.work__image {
+  display: block;
+  height: 100%;
+  transition: opacity 400ms;
+}
+
+.hovered--work .work__image {
+  opacity: 0.15;
+}
+
+.work__title,
+.work__description {
+  position: absolute;
+  /*Keeping them in the center, horizontally*/
+  left: 0;
+  right: 0;
+  /*Keeping them in the center, horizontally*/
+  color: var(--color-light-text);
+  opacity: 0;
+}
+
+.work__title {
+  top: 33%;
+  transition: all 400ms;
+}
+
+.hovered--work .work__title {
+  top: 39%;
+  opacity: 1;
+}
+
+.work__description {
+  bottom: 33%;
+  transition: all 400ms;
+}
+
+.hovered--work .work__description {
+  bottom: 39%;
+  opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .hovered--work .work__title {
+    top: 40%;
+  }
+
+  .hovered--work .work__description {
+    bottom: 40%;
+  }
+}
