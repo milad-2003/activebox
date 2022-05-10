@@ -130,6 +130,7 @@ p {
 
 .work {
   position: relative;
+  overflow: hidden;
 }
 
 .work__image-container {
