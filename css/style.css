@@ -13,13 +13,17 @@
   box-sizing: border-box;
 }
 
+img {
+  vertical-align: middle;
+}
+
 /*Typography*/
 
 html {
   font-family: "Raleway", sans-serif;
   font-size: 62.5%;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: center;
 }
 
@@ -99,6 +103,7 @@ p {
   height: 4rem;
   padding: 1rem;
   width: 4rem;
+  margin-right: 0.4rem;
 }
 
 .link--testimonial:hover,
@@ -193,3 +198,37 @@ p {
     bottom: 40%;
   }
 }
+
+/*Testimonial*/
+
+.testimonial {
+  max-width: 270px;
+  margin: auto;
+  text-align: left;
+}
+
+.testimonial__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonial__name {
+  text-transform: initial;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.testimonial__job {
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+/* Keeping the link icons in the center of their box */
+.testimonial__links > a {
+  text-align: center;
+}
+/* Keeping the link icons in the center of their box */
