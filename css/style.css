@@ -231,4 +231,97 @@ p {
 .team__links > a {
   text-align: center;
 }
-/* Keeping the link icons in the center of their box */
+
+/*Testimonial Block*/
+
+.testimonials {
+  position: relative;
+  background-color: #53354a;
+}
+
+.mySlide {
+  display: grid;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.testimonial__content {
+  position: relative;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.testimonial__image {
+  width: 100%;
+  align-self: center;
+}
+
+.testimonial__text {
+  color: var(--color-light-text);
+  margin-top: 0;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  font-family: "Cardo", serif;
+  font-size: 2.6rem;
+  line-height: 1.4;
+}
+
+.testimonial__name {
+  color: var(--color-light-text);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-bottom: 6rem;
+}
+
+/*TODO: Remember to add click events to dots later*/
+/*TODO: Remember to add click events to dots later*/
+/*TODO: Remember to add click events to dots later*/
+/*TODO: Remember to add click events to dots later*/
+/*TODO: Remember to add click events to dots later*/
+
+.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: var(--color-light-text);
+  opacity: 0.2;
+  margin-right: 0.8rem;
+  border: none;
+  transition: opacity 1s ease-in;
+}
+
+.active {
+  opacity: 1;
+}
+
+/*TODO: Remember to add click events to dots later*/
+/*TODO: Remember to add click events to dots later*/
+/*TODO: Remember to add click events to dots later*/
+/*TODO: Remember to add click events to dots later*/
+/*TODO: Remember to add click events to dots later*/
+
+@media screen and (min-width: 768px) {
+  .testimonial__content {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mySlide {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial__text {
+    font-size: 3.2rem;
+  }
+}
