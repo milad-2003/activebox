@@ -13,8 +13,26 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 img {
   vertical-align: middle;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.block {
+  margin-top: 7rem;
+  padding: 0 2rem;
 }
 
 /*Typography*/
@@ -375,5 +393,191 @@ p {
     padding: 0;
     max-width: 330px;
     margin: auto;
+  }
+}
+
+/*Banner and Navigation Bar*/
+
+.banner {
+  position: relative;
+}
+
+#header {
+  background-image: url(/images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  /*Setting the height of the background image as the height of the element*/
+  height: 750px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.banner__heading {
+  padding-top: 20rem;
+}
+
+.banner__text {
+  color: var(--color-light-text);
+  margin-bottom: 8rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+
+.navbar__content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+  transition: padding 500ms;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-scrolled {
+  background-color: #292c47;
+  transition: background-color 500ms;
+}
+
+.navbar-scrolled .navbar__content {
+  padding: 2rem 0;
+  border: none;
+}
+
+.navtoggler {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 100%;
+  display: inline-block;
+  padding: 10px;
+  overflow: hidden;
+  z-index: 3;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.navtoggler > span {
+  height: 2.4px;
+  width: 18px;
+  background-color: #fff;
+  display: block;
+  margin: 3px;
+  border-radius: 2px;
+}
+
+.active-navtoggler #line1 {
+  transform: translate(3px) rotate(40deg);
+}
+
+.active-navtoggler #line2 {
+  opacity: 0;
+}
+
+.active-navtoggler #line3 {
+  transform: translate(3px) rotate(-40deg);
+}
+
+#line1 {
+  transform-origin: 0 0;
+}
+
+#line3 {
+  transform-origin: 0 100%;
+}
+
+.navtoggler > span {
+  transition: all 400ms;
+}
+
+.navlinks {
+  padding-left: 0;
+  background-color: #000;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  inset: 0 0;
+  z-index: 2;
+  visibility: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms;
+}
+
+.active-navlinks {
+  opacity: 0.9;
+  visibility: visible;
+}
+
+.navlink {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.navlink > a {
+  color: var(--color-light-text);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  opacity: 0.75;
+  transition: opacity 400ms;
+}
+
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+
+.navlink > a:hover, .navlink > a.active {
+  opacity: 1;
+}
+
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+/*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
+
+@media screen and (min-width: 1024px) {
+  .banner__text {
+    font-size: 1.8rem;
+  }
+
+  .navbar__content {
+    width: 95%;
+  }
+
+  .navtoggler {
+    display: none;
+  }
+
+  .navlinks {
+    visibility: visible;
+    opacity: 1;
+    background-color: initial;
+    height: initial;
+    width: initial;
+    position: initial;
+    inset: initial;
+    flex-direction: row;
+  }
+
+  .navlink {
+    margin: 0 0 0 6rem;
+  }
+
+  .navlink > a {
+    font-size: 1.3rem;
   }
 }
