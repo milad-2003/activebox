@@ -283,8 +283,12 @@ p {
 }
 
 .testimonial__image {
-  width: 100%;
+  overflow: hidden;
   align-self: center;
+}
+
+.testimonial__image > img {
+  width: 100%;
 }
 
 .testimonial__text {
