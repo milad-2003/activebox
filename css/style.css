@@ -17,6 +17,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: hidden;
+}
+
 button, a {
   -webkit-tap-highlight-color: transparent;
 }
