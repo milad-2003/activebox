@@ -470,7 +470,7 @@ p {
   border: none;
   border-radius: 100%;
   display: inline-block;
-  padding: 10px;
+  padding: 13px 12px;
   overflow: hidden;
   z-index: 4;
   position: relative;
@@ -483,8 +483,9 @@ p {
   width: 18px;
   background-color: #fff;
   display: block;
-  margin: 3px;
+  margin-top: 3px;
   border-radius: 2px;
+  transition: all 400ms;
 }
 
 .active-navtoggler #line1 {
@@ -507,14 +508,9 @@ p {
   transform-origin: 0 100%;
 }
 
-.navtoggler > span {
-  transition: all 400ms;
-}
-
 .navlinks {
   padding-left: 0;
-  background-color: #000;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -530,7 +526,7 @@ p {
 }
 
 .active-navlinks {
-  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.9);
   visibility: visible;
 }
 
@@ -540,12 +536,16 @@ p {
 }
 
 .navlink > a {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 700;
   transition: color 400ms;
+}
+
+.active-navlinks > .navlink > a {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
@@ -593,6 +593,7 @@ p {
   }
 
   .navlink > a {
+    color: rgba(255, 255, 255, 0.75);
     font-size: 1.3rem;
   }
 }
