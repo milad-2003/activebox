@@ -684,6 +684,41 @@ the header, that has an absolute position*/
   color: var(--color-header);
 }
 
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+
+.tada {
+  animation-name: tada;
+  animation-duration: 1s;
+}
+
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+/*TODO: Remember to add this class to the download button, once scrolled on it*/
+
+@keyframes tada {
+  10%, 20% {
+    transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+  }
+
+  100% {
+    transform: scale3d(1,1,1);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .download__heading {
     font-size: 2.8rem;
