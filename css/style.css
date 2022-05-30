@@ -163,17 +163,17 @@ p {
 }
 
 .hovered--work .work__image-container {
-  transform: scale(1.15);
+  transform: scale(1.2);
 }
 
 .work__image {
-  display: block;
+  display: inline-block;
   height: 100%;
   transition: opacity 400ms;
 }
 
 .hovered--work .work__image {
-  opacity: 0.15;
+  opacity: 0.1;
 }
 
 .work__title,
@@ -605,5 +605,40 @@ the header, that has an absolute position*/
 @media screen and (min-width: 1024px) {
   .features {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*Works Block*/
+
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+
+#works {
+  display: grid;
+  grid-gap: 1px;
+}
+
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+/*TODO: Remember to add an animation on this element so that each of its children show one after another in order, once scrolled on the element*/
+
+#works > a {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 650px) {
+  #works {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #works {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

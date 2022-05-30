@@ -3,11 +3,11 @@ $(document).ready(function() {
     //work hover effects
 
     $(".work").mouseenter(function() {
-        $(".work").addClass("hovered--work");
+        $(this).addClass("hovered--work");
     });
 
     $(".work").mouseleave(function() {
-        $(".work").removeClass("hovered--work");
+        $(this).removeClass("hovered--work");
     });
 
     //animations for menu icon on mobiles and tablets
