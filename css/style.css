@@ -581,3 +581,22 @@ p {
     font-size: 1.3rem;
   }
 }
+
+/*Features Block*/
+
+.features {
+  display: grid;
+  grid-gap: 8rem 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
