@@ -540,13 +540,12 @@ p {
 }
 
 .navlink > a {
-  color: var(--color-light-text);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 700;
-  opacity: 0.75;
-  transition: opacity 400ms;
+  transition: color 400ms;
 }
 
 /*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
@@ -555,8 +554,8 @@ p {
 /*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
 /*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/
 
-.navlink > a:hover, .navlink > a.active {
-  opacity: 1;
+.navlink:hover > a, .navlink > a.active {
+  color: rgba(255, 255, 255, 1);
 }
 
 /*TODO: Remember to add the "active" class to the link that is scrolled on its related id in the future updates*/

@@ -17,6 +17,11 @@ $(document).ready(function() {
         $(".navtoggler").toggleClass("active-navtoggler");
     });
 
+    $(".navlink").click(function() {
+        $(".navlinks").toggleClass("active-navlinks");
+        $(".navtoggler").toggleClass("active-navtoggler");
+    });
+
     //decreasing the padding of navbar when scrolled down
 
     $(window).scroll(function() {
