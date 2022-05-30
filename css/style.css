@@ -220,9 +220,8 @@ p {
 /*Team*/
 
 .team {
-  max-width: 270px;
+  max-width: 300px;
   margin: auto;
-  text-align: left;
 }
 
 .team__image {
@@ -243,6 +242,12 @@ p {
   font-weight: 400;
   font-size: 1.3rem;
   margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    text-align: left;
+  }
 }
 
 /* Keeping the link icons in the center of their box */
@@ -639,6 +644,25 @@ the header, that has an absolute position*/
 
 @media screen and (min-width: 1300px) {
   #works {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*Team Block*/
+
+.team-block {
+  display: grid;
+  grid-gap: 12rem 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .team-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1051px) {
+  .team-block {
     grid-template-columns: repeat(4, 1fr);
   }
 }
