@@ -461,7 +461,7 @@ p {
 }
 
 .navbar-scrolled .navbar__content {
-  padding: 2.5rem 0;
+  padding: 2rem 0;
   border: none;
 }
 
@@ -490,16 +490,15 @@ p {
 }
 
 .active-navtoggler #line1 {
-  transform: translate(2.5px) rotate(40deg);
+  transform: translate(2.5px) rotate(39deg);
 }
 
 .active-navtoggler #line2 {
   width: 0;
-  opacity: 0;
 }
 
 .active-navtoggler #line3 {
-  transform: translate(2.5px) rotate(-40deg);
+  transform: translate(2.5px) rotate(-39deg);
 }
 
 #line1 {
